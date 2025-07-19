@@ -20,10 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} font-sans antialiased container mx-auto my-8 max-w-7xl`}
-      >
-        <main>{children}</main>
+      <body className={`${inter.variable} font-sans antialiased min-h-screen`}>
+        {children}
       </body>
     </html>
   );
