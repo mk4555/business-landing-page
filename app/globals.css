@@ -9,6 +9,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --header-height: 64px;
+  --content-px: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
