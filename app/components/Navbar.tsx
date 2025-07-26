@@ -42,7 +42,7 @@ const Navbar: React.FC = ({}) => {
       <div className="hidden md:flex items-center gap-x-8">
         <Navlinks />
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden ">
         {!isOpen && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
