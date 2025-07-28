@@ -78,7 +78,7 @@ const Navbar: React.FC = ({}) => {
 
   return (
     <>
-      <nav className="container flex mx-auto max-w-6xl py-5 text-1.5xl md:justify-normal justify-between items-center text-gray-800">
+      <nav className="container flex mx-auto max-w-6xl py-2 text-1.5xl md:justify-normal justify-between items-center text-gray-800">
         <Logo />
         <div className="hidden md:flex items-center gap-x-8">
           <Navlinks />

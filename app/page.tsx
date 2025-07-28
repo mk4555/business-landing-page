@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="mt-(--header-height) pt-12 row-start-2 bg-white">
+      <main className="mt-(--header-height) flex flex-col bg-[url('/main-bg.png')] bg-cover bg-center">
         <Hero />
         <InfoSection />
       </main>

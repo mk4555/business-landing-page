@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white border-b-2 text-pretty px-(--content-px)">
+    <section className="text-pretty px-(--content-px) py-8 md:py-16">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-[32px]  ">
         <div className="flex flex-row items-center  text-left ">
           <div className="justify-center md:basis-2/3">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight motion-preset-bounce">
               {"Unlock Your Business's Full Potential"}
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-600">

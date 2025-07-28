@@ -8,7 +8,7 @@ const InfoSection: React.FC = () => {
     setHours(800000);
   }, []);
   return (
-    <section className="bg-gray-50 border-b-2">
+    <section>
       <div className="text-center mx-auto max-w-6xl px-(--content-px) py-16">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           {"Why Choose Us?"}
