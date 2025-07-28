@@ -121,7 +121,7 @@ const Navbar: React.FC = ({}) => {
       </nav>
 
       {isOpen && (
-        <div className="container md:hidden flex flex-col items-center gap-x-8 min-h-128 w-full">
+        <div className=" md:hidden flex flex-col items-center gap-x-8 min-h-128 w-full">
           <Navlinks />
         </div>
       )}
