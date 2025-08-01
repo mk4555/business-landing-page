@@ -5,9 +5,9 @@ import InfoSection from "./components/InfoSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-sky-200 via-blue-100 to-indigo-200">
       <Header />
-      <main className="mt-(--header-height) flex flex-col bg-[url('/main-bg.png')] bg-cover bg-center">
+      <main className="flex flex-col ">
         <Hero />
         <InfoSection />
       </main>

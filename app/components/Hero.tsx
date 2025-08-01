@@ -1,45 +1,40 @@
-import Link from "next/link";
+"use client";
 import React from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
+
 const Hero: React.FC = () => {
   return (
-    <section className="text-pretty px-(--content-px) py-8 md:py-16">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-[32px]  ">
-        <div className="flex flex-row items-center  text-left ">
-          <div className="justify-center md:basis-2/3">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight motion-preset-bounce">
-              {"Unlock Your Business's Full Potential"}
-            </h1>
-            <p className="mt-4 text-lg sm:text-xl text-gray-600">
-              {
-                "We provide innovative AI solutions to help your business grow and succeed in the automated age. Let's build the future together."
-              }
-            </p>
-            <div className="flex gap-3 flex-col md:flex-row w-full md:justify-start pb-4 my-4">
-              <Link
-                href="/contact"
-                className="w-full md:w-fit rounded-full text-center  bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-md hover:bg-blue-700 transition"
-              >
-                {"Get Started"}
-              </Link>
-              <Link
-                href="/about"
-                className="w-full md:w-fit rounded-full text-center bg-gray-200 px-6 py-3 text-base font-semibold text-gray-800 hover:bg-gray-300 transition"
-              >
-                {"Learn More"}
-              </Link>
-            </div>
-          </div>
-          <div className="basis-1/3 justify-center hidden md:flex">
-            <Image
-              width={500}
-              height={500}
-              src="/hero-main.png"
-              className="lg:visible basis-1/3 justify-center hidden md:flex"
-              alt="An abstract image representing business growth and potential"
-            />
-          </div>
-        </div>
+    <section className="min-h-[85vh]  flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-sky-100 via-blue-100 to-indigo-100">
+      <div className="mb-6 ">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+          className="text-5xl md:text-6xl lg:text-7xl font-extrabold  text-gray-900"
+        >
+          {"Let AI pilot your reptitive tasks"}
+        </motion.h1>
+      </div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
+        className="mt-3 text-lg md:text-xl text-gray-700 max-w-3xl"
+      >
+        Our AI-driven platform streamlines your repetitive tasks and workflows,
+        freeing your team to focus on what matters most — innovation and growth.
+      </motion.p>
+
+      <div className="mt-6 flex gap-4">
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
+          className="px-8 py-4 rounded-full text-white text-lg font-medium bg-blue-600 hover:bg-blue-700 shadow-md transition cursor-pointer"
+        >
+          Get started
+        </motion.button>
       </div>
     </section>
   );
