@@ -7,7 +7,7 @@ const Logo = () => (
   <svg
     height="40px"
     viewBox="0 0 1024 1024"
-    className="icon mr-4"
+    className="icon mr-4 cursor-pointer"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -49,21 +49,21 @@ const Navlinks = () => {
     <>
       <Link
         href="/about"
-        className="font-semibold transition hover:text-blue-300"
+        className="font-semibold hover:text-sky-600  transition-colors duration-300 "
       >
-        ABOUT
+        About
+      </Link>
+      <Link
+        href="/pricing"
+        className="font-semibold hover:text-sky-600  transition-colors duration-300"
+      >
+        Pricing
       </Link>
       <Link
         href="/contact"
-        className="font-semibold transition hover:text-blue-300"
+        className="font-semibold hover:text-sky-600  transition-colors duration-300"
       >
-        CONTACT
-      </Link>
-      <Link
-        href="/blog"
-        className="font-semibold transition hover:text-blue-300"
-      >
-        LOGIN
+        Contact
       </Link>
     </>
   );
@@ -78,7 +78,7 @@ const Navbar: React.FC = ({}) => {
 
   return (
     <>
-      <nav className="container flex mx-auto max-w-7xl py-2 text-1.5xl md:justify-normal justify-between items-center text-gray-800">
+      <nav className="container flex mx-auto max-w-7xl py-2 text-1xl md:justify-normal justify-between items-center text-gray-800">
         <Logo />
         <div className="hidden md:flex items-center gap-x-8">
           <Navlinks />
