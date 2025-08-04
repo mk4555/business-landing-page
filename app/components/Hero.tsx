@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-          className="text-5xl  md:text-7xl font-[fontOutfit]  text-gray-900 leading-tight"
+          className="text-5xl md:text-7xl font-outfit font-bold text-gray-900 leading-tight"
         >
           Automate the Grind.
         </motion.h1>
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-          className="text-5xl  md:text-7xl font-[fontOutfit] text-gray-900 leading-tight"
+          className="text-5xl md:text-7xl font-outfit font-bold text-gray-900 leading-tight"
         >
           Scale What Matters.
         </motion.h1>

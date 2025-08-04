@@ -39,7 +39,7 @@ export default function RootLayout({
       lang="en"
       className={`${fontSans.variable} ${fontOutfit.variable} ${fontJakarta.variable}`}
     >
-      <body className="font-sans antialiased min-h-screen bg-white">
+      <body className="font-sans antialiased min-h-screen bg-white text-gray-900">
         {children}
       </body>
     </html>
